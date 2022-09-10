@@ -5,13 +5,13 @@ pipeline {
       parallel {
         stage('Run Project') {
           steps {
-            sh 'mvn test'
+            bat 'mvn test'
           }
         }
 
         stage('Get version') {
           steps {
-            sh 'mvn --version'
+            bat 'mvn --version'
           }
         }
 
