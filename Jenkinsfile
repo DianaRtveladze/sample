@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('Run Project') {
           steps {
-            sh 'mvn clean install'
+            sh 'mvn clean test'
           }
         }
 
